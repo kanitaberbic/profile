@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+<div class="container">
+  <div class="card">
+    <!-- Left column: Login form -->
+    <div class="left-column">
+      <div class="text-center">
+        <img src="slika.png" alt="Logo">
+        <h4>Dobrodošli u našu organizaciju</h4>
+      </div>
+      <form th:action="@{/login}" method="post">
+        <p>Molimo vas da se prijavite</p>
+        <label class="form-label" for="username">Korisničko ime</label>
+        <input type="text" id="username" class="form-control"
+               placeholder="Unesite korisničko ime" name="username" required>
+        <label class="form-label" for="password">Šifra</label>
+        <input type="password" id="password" class="form-control"
+               placeholder="Unesite šifru" name="password" required>
+        <button type="submit">Prijavi se</button>
+      </form>
+    </div>
+
+    <!-- Right column: "Ko smo mi?" -->
+    <div class="right-column">
+      <h4>Ko smo mi?</h4>
+      <p>Od 2014. godine, naše udruženje okuplja žene koje žele da doprinesu pozitivnim promjenama u društvu.
+        Kao nestranačka i nevladina organizacija, promovišemo multireligijsku i multietničku saradnju,
+        osnažujući žene da postanu aktivni deo zajednice.</p>
+      <p>Organizujemo radionice i seminare za povećanje znanja i veština naših članica.
+        Pomažemo ženama da ostvare svoje potencijale kroz umrežavanje i zajedničke projekte.
+        Organizujemo ekološke akcije i pružamo podršku ženama kroz razmenu iskustava i druženja.</p>
+      <a th:href="@{/home}" class="btn-link">Nazad na početnu stranicu</a>
+    </div>
+  </div>
+</div>
+</body>
+</html>

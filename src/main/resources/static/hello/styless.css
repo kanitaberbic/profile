@@ -1,0 +1,33 @@
+/* Set background image for the body */
+body {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Centering content */
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight white background to make text readable */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Logo styling */
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Hello text styling */
+h1 {
+    font-size: 3em;
+    color: #333;
+}

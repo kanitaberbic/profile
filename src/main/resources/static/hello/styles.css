@@ -1,0 +1,108 @@
+/* Globalni stilovi */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Kontejner za login i tekst */
+.login-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 20px;
+}
+
+/* Stil za formu */
+form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #0056b3;
+}
+
+/* Tekstualni deo */
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Stil za "Ko smo mi?" */
+.login-container h2 {
+    color: #007bff;
+}
+
+.login-container p {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Link stil */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Flex layout za "Ko smo mi?" */
+.login-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.login-container h2,
+.login-container p {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.login-container p:last-of-type {
+    margin-bottom: 20px;
+}

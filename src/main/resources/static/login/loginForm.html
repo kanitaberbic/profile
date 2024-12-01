@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href=""
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+<nav>
+    <ul>
+        <il><a href="stranica.html" >Mozaik ></a><li>
+    </ul>
+</nav>
+<div class="box">
+    <h2>Sign in</h2>
+    <p>Use Stranica</p>
+    <form action="#">
+
+        <label for="Ime">Ime</label>
+        <input type="text" placeholder="enter your name">
+        <div class="inputBox">
+            <input type="email" name="emil" required value="" onkeydown="this.setAttribute('value',this.value);">
+            <label for="email">E-mal adress or telephome number</label>
+        </div>
+        <div class="inputBox">
+            <input type="password" name="password" required value="" onkeydown="this.setAttribute('value',this.value);">
+            <label for="password">Password</label>
+        </div>
+        <div class="forgot">
+            <button>Forgot your password</button>
+        </div>
+        <input type="submit" name="sign-in" value="Sign In">
+            </form>
+</div>
+</body>
